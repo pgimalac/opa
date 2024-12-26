@@ -357,10 +357,10 @@ func formatErrorDescription(s string, details ErrorDetails) string {
 		}
 	}
 
-	err = tpl.Execute(&descrAsBuffer, details)
-	if err != nil {
-		return err.Error()
-	}
+	// err = tpl.Execute(&descrAsBuffer, details)
+	// if err != nil {
+	// 	return err.Error()
+	// }
 
 	return descrAsBuffer.String()
 }
